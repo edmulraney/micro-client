@@ -8,7 +8,14 @@
     "dev": "webpack-dev-server --mode development --open",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "cypress": "CYPRESS_baseUrl=http://localhost:6006 cypress run",
+    "cypress": "cypress run",
+    "cypress-live": "cypress open",
+    "cypress-record": "cypress run --record --key 6fe1e01b-3d66-4a36-a2dc-1e99b6369e30",
+    "testcafe": "testcafe",
+    "testcafe-live": "testcafe --live",
+    "testcafe-parallel": "testcafe -c 3",
+    "testcafe-live-parallel": "testcafe -c 3 --live",
+    "sonar": "sonar-scanner",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -30,14 +37,18 @@
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "cypress": "^3.2.0",
-    "jest": "^24.7.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "@storybook/react": "^5.0.6",
     "@storybook/addon-actions": "^5.0.6",
     "@storybook/addon-links": "^5.0.6",
-    "@storybook/addons": "^5.0.6"
+    "@storybook/addons": "^5.0.6",
+    "@storybook/react": "^5.0.6",
+    "axe-testcafe": "^1.1.0",
+    "babel-loader": "^8.0.5",
+    "cypress": "^3.2.0",
+    "cypress-axe": "^0.4.0",
+    "jest": "^24.7.1",
+    "prettier": "1.16.4",
+    "testcafe": "^1.1.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
