@@ -1,0 +1,7 @@
+{
+    "browsers": "chrome",
+    "browsers_headless": "chrome:headless",
+    "browsers_visible": "chrome",
+    "browsers_lots": ["chrome", "firefox"],
+    "src": "./app/src/**/*.testcafe.js"
+}
